@@ -32,7 +32,7 @@ describe('Dream team', () => {
     });
 
     it.optional('should return sorted sequence', () => {
-      assert.equal(createDreamTeam(['Peter', 'Adam', 'Gary', 'Bobby', 'Philip', 'Andrea', 'Evelyn', 'Evelyn', 'Kimberly', 'Denise']), 'AABDEEGKPP');
+      assert.equal(createDreamTeam(['Peter', 'Adam', 'Gary', 'Bobb[y', 'Philip', 'Andrea', 'Evelyn', 'Evelyn', 'Kimberly', 'Denise']), 'AABDEEGKPP');
       assert.equal(createDreamTeam(['Eric', 'Donald', 'Justin', 'Katherine', 'Ethan', 'Charles', 'Frances', 'Kimberly', 'Noah', 'Paul']), 'CDEEFJKKNP');
       assert.equal(createDreamTeam(['Ann', 'Nancy', 'Nicholas', 'Alexander', 'Charles', 'Johnny', 'Philip', 'Jeffrey', 'Kenneth', 'Raymond']), 'AACJJKNNPR');
       assert.equal(createDreamTeam(['Ann', 'Christian', 'Douglas', 'Justin', 'Eugene', 'Kayla', 'Anthony', 'Brian', 'Adam', 'Benjamin']), 'AAABBCDEJK');
